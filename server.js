@@ -19,9 +19,10 @@ const port = 3000;
 
 // gives server access to ejs
 app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 
 // gives /css/main.css
-app.use(express.static("public"));
+app.use(express.static(__dirname + '/public'));
 
 // initializes projectData
 projectData
