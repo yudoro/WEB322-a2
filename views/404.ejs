@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+     <!-- nav bar -->
+    <%- include('partials/navbar', {page: '/404'}) %>
+
+    <!-- hero -->
+    <div class="container mx-auto">
+        <div class="hero min-h-1/2-screen my-8 rounded-2xl"
+            style="background-image: url(https://drawdown.org/sites/default/files/solutions/solution_multistrataagroforestry01.jpg);">
+            <div class="hero-overlay bg-[rgba(0,0,0,0.6)] rounded-2xl"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="max-w-md py-8">
+                    <h1 class="mb-8 text-5xl font-bold">Oopsies!</h1>
+                    <p class="mb-4"><%= message %></p>
+                    <a class="btn btn-primary" href="/">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

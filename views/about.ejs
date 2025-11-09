@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <%- include('partials/navbar', {page: '/about'}) %>
+
+    <!-- hero -->
+    <div class="container mx-auto mb-6">
+      <div class="hero bg-base-200 min-h-80">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-5xl font-bold">About</h1>
+            <p class="py-6">Learn a little bit about me!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cards -->
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div>
+            <div class="card w-150 bg-base-100 shadow-xl justify-self-center rounded-xl">
+              <figure>
+                <img
+                  class="w-full"
+                  src="https://i.redd.it/v3mtqe4uppd31.jpg"
+                  alt="black and white cat with heart behind ears"
+                />
+              </figure>
+            </div>
+          </div>
+
+          <div>
+            <div class="card w-150 bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title">Dorothy Yu</h2>
+                <p>
+                  Hello! Nice to meet you, stranger (Professor Rohit) reading my
+                  about me page! I am a third semester student at Seneca
+                  Polytechnic. I am currently studying WEB322 as a course that
+                  is apart of the Computer Programming and Analysis program.
+                </p>
+                <p>
+                  In my free time, I enjoy spending time with my friends,
+                  whether it be playing video games with them or going out to
+                  eat. I am a very big foodie and love trying new restaurants
+                  and cuisines!
+                </p>
+                <p>
+                  Fun fact: I love cats and had one (RIP Ed "Eddie" Sheeran Yu
+                  at 13 years old, not the cat in the photo) but I am allergic
+                  to them!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

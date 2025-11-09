@@ -1,0 +1,9 @@
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Handle lowercase variants too
+*.ds_store
+**/*.ds_store
+
+node_modules/
